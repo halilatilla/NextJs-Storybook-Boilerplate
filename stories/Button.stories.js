@@ -4,9 +4,7 @@ import { Button } from "../components";
 export default {
   title: "Components/Button",
   component: Button,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
+  argTypes: {},
 };
 
 const Template = (args) => <Button {...args} />;
@@ -14,22 +12,9 @@ const Template = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  children: "Button",
-  backgroundColor: "orange",
+  children: "Contact me",
 };
 export const Secondary = Template.bind({});
 Secondary.args = {
-  children: "Button",
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: "large",
-  children: "Button",
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: "small",
-  children: "Button",
+  children: "My work",
 };
