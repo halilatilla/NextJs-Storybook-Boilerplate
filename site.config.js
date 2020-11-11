@@ -1,6 +1,6 @@
 module.exports = {
   title: "Halil Atilla",
-  description: "Halil Atilla personal website",
+  description: "Halil Atilla Next-Storybook-Boilerplate",
   siteUrl: "https://halilatilla.com/",
   googleAnalytic: "XXXXXXXXXXX",
   author: {

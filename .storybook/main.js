@@ -6,10 +6,13 @@ module.exports = {
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+    //added for sass
     "@storybook/preset-scss",
+    //added for A11Y
     "@storybook/addon-a11y",
   ],
 
+  // added for svgr with webpack
   webpackFinal: (config) => {
     const fileLoaderRule = config.module.rules.find(
       (rule) => rule.test && rule.test.test(".svg")
